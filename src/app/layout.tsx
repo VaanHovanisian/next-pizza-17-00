@@ -6,11 +6,14 @@ const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin", "cyrillic"],
   display: "swap",
+
 });
+
+
 
 export const metadata: Metadata = {
   title: "Next Pizza",
-  description: "лучшие пиццы во всем мире",
+  description: "лутие в мире",
 };
 
 export default function RootLayout({
@@ -20,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.className}`}>{children}</body>
+      <body className={`${nunito.className}`} >
+        {children}
+      </body>
     </html>
   );
 }
