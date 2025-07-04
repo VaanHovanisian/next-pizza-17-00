@@ -1,7 +1,4 @@
-export enum ApiRoutes  {
-    INGREDIENTS = "/ingredients",
+export enum ApiRoutes {
+  INGREDIENTS = "/ingredients",
+  PRODUCTS = "/products",
 }
-
-
-
-

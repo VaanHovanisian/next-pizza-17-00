@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { SearchIcon } from "lucide-react";
@@ -8,10 +8,11 @@ interface Props {
   className?: string;
   value?: string;
   setValue?: (value: string) => void;
+  onFocus: () => void;
 }
 
 export const Search: React.FC<Props> = (props) => {
-  const { className, setValue, value } = props;
+  const { className, setValue, value, onFocus } = props;
   return (
     <label className={cn("relative flex items-center gap-2", className)}>
       <SearchIcon className="absolute left-1 text-gray-400" />
